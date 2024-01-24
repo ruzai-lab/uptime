@@ -73,6 +73,8 @@ jobs:
             sudo wg-quick up warp
       
           else
+            echo -e "WARP mode: ${{ inputs.mode }}.
+You can choose client or wireguard."
             exit 1
           fi
       
